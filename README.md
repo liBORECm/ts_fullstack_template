@@ -93,6 +93,7 @@ The frontend lives in `frontend/` and is a standard React + Vite + TypeScript ap
 | `npm run migrate:up` | Apply one migration up |
 | `npm run migrate:down` | Roll back one migration |
 | `npm run migrate:make <name>` | Create a new migration file (`db/migrations/<timestamp>_<name>.ts`) |
+| `npm run entity <name>` | Create a new entity int he codebase |
 
 ---
 
