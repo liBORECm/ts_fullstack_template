@@ -12,7 +12,8 @@
         "migrate:latest": "npx knex migrate:latest",
         "migrate:up": "npx knex migrate:up",
         "migrate:down": "npx knex migrate:down",
-        "migrate:make": "npx knex migrate:make --x ts"
+        "migrate:make": "npx knex migrate:make -x ts",
+        "entity": "node scripts/entity.js"
     },
     "keywords": [],
     "author": "",

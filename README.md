@@ -122,6 +122,29 @@ src/
 
 ## Adding a new entity
 
+### Option A — generator (recommended)
+
+```sh
+npm run entity <entityName>
+```
+
+Creates all three files, a migration with `id`/`created_at`/`updated_at`/`deleted_at`, and registers the route automatically. Input can be camelCase or PascalCase.
+
+```sh
+npm run entity productItem
+# creates:
+#   src/productItem/productItem.model.ts
+#   src/productItem/productItem.service.ts
+#   src/productItem/productItem.controller.ts
+#   db/migrations/<timestamp>_product_item_create.ts
+```
+
+Then add your fields to the model and migration and run `npm run migrate:latest`.
+
+---
+
+### Option B — manually
+
 Create a folder `src/<entity>/` with three files. Nothing else needs to change.
 
 ### 1. Model — `<entity>.model.ts`
